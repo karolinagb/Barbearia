@@ -8,6 +8,7 @@ body{
 
 .principal{
     background: #cccccc;
+    padding: 30px;
 }
 
 h1{
@@ -32,9 +33,22 @@ em strong{
 
 .beneficios{
     background: #FFFFFF;
+    padding: 20px;
 }
 
 h2{
     text-align: center;
+}
+
+ul{
+    /*inline-block = ocupa o tamanho do seu conteúdo e permite elementos ao lado*/
+    display: inline-block;
+    vertical-align: top; /*Alinha o elemento na linha superior*/
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagemBeneficios{
+    width: 50%;
 }
 
