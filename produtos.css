@@ -28,6 +28,14 @@ nav a{
     text-decoration: none;
 }
 
+/* hover = comportamento de quando o mouse está por cima do elemento */
+/* a:hover = indica o comportamento que queremos mapear na tag a*/
+/* Lê-se: quando o mouse estiver por cima dentro do link do menu de navegação */
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
 .produtos{
     width: 940px;
     margin: 0 auto;
