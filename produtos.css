@@ -59,6 +59,20 @@ nav a:hover{
     border-radius: 10px;
 }
 
+.produtos li:hover{
+    border-color: #C78C19;
+}
+
+/* active = comportamento de quando o elemento está sendo clicado */
+.produtos li:active{
+    border-color: #088C19;
+}
+
+/* Quando o mouse estiver em cima do li o h2 vai mudar o tamanho da fonte */
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
 .produtos h2{
     font-size: 30px;
     font-weight: bold;
