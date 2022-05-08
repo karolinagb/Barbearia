@@ -88,3 +88,10 @@ nav a:hover{
     /* margin-top: 10px poderia fazer assim  */
     margin: 10px 0 0;
 }
+
+footer{
+    text-align: center;
+    /* Colocando uma imagem de fundo através do seu endereço */
+    background: url("bg.jpg");
+    padding: 40px 0px;
+}
