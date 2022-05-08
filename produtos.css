@@ -43,6 +43,11 @@ nav a{
     padding: 30px 20px;
     /* espaçamento em px vai ficar dentro do percentual de 30% total, então vai se ajustar sozinho */
     box-sizing: border-box;
+    /* border-color: #000000;
+    border-width: 2px;
+    border-style: solid; */
+    /* Posso substituir por: */
+    border: 2px solid #000000;
 }
 
 .produtos h2{
