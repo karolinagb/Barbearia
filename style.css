@@ -1,5 +1,27 @@
 header{
     background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative;
+    /* Um tamanho padrão que se usa na web para largura pois a maioria das boas resoluções são
+    1260px de largura. 940 fica numa boa margem*/
+    width: 940px; 
+    margin: 0 auto;
+}
+
+nav{
+    /* Toda vez que mexemos em posicionamento e estamos usando posicionamento absoluto, ele fica absoluto
+    em relação a página, ou seja, o novo ponto inicial dele, é qualquer ponto que a gente selecionou no
+    navegador. Quando eu quero que ele tenha um ponto absoluto, mas dentro de alguma caixa (no caso a nav
+    absoluta a div), eu preciso que essa caixa levante, ou seja ela também precisa ter um posicionamento
+    só que relative */
+    position: absolute;
+    /* A imagem a qual queremos deixar alinhado nossa nav tem 240px, para que a nav fique no meio
+    da imagem, precisamos que o topo tenha 110px */
+    top: 110px;
+    right: 0;
 }
 
 nav li{
