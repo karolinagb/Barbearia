@@ -37,9 +37,6 @@ nav a {
     text-decoration: none;
 }
 
-.titulo-principal{
-    padding-left: 20px;
-}
 
 #banner{
     width: 100%;
@@ -48,6 +45,14 @@ nav a {
 .principal{
     background: #cccccc;
     padding: 30px;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.titulo-principal{
+    padding-left: 20px;
 }
 
 .titulo-centralizado{
@@ -65,6 +70,8 @@ p{
 em strong{
     color: #FF0000;
 }
+
+
 
 .itens{
     /*inline-block = ocupa o tamanho do seu conteúdo e permite elementos ao lado*/
