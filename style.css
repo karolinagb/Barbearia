@@ -5,21 +5,12 @@ header{
 
 .caixa{
     position: relative;
-    /* Um tamanho padrão que se usa na web para largura pois a maioria das boas resoluções são
-    1260px de largura. 940 fica numa boa margem*/
-    width: 940px; 
+    width: 940px;
     margin: 0 auto;
 }
 
 nav{
-    /* Toda vez que mexemos em posicionamento e estamos usando posicionamento absoluto, ele fica absoluto
-    em relação a página, ou seja, o novo ponto inicial dele, é qualquer ponto que a gente selecionou no
-    navegador. Quando eu quero que ele tenha um ponto absoluto, mas dentro de alguma caixa (no caso a nav
-    absoluta a div), eu preciso que essa caixa levante, ou seja ela também precisa ter um posicionamento
-    só que relative */
     position: absolute;
-    /* A imagem a qual queremos deixar alinhado nossa nav tem 240px, para que a nav fique no meio
-    da imagem, precisamos que o topo tenha 110px */
     top: 110px;
     right: 0;
 }
@@ -29,7 +20,7 @@ nav li{
     margin: 0 0 0 15px;
 }
 
-nav a {
+nav a{
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
@@ -37,61 +28,101 @@ nav a {
     text-decoration: none;
 }
 
-
-#banner{
-    width: 100%;
+/* hover = comportamento de quando o mouse está por cima do elemento */
+/* a:hover = indica o comportamento que queremos mapear na tag a*/
+/* Lê-se: quando o mouse estiver por cima dentro do link do menu de navegação */
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
 }
 
-.principal{
-    background: #cccccc;
-    padding: 30px;
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-.negrito{
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    /* espaçamento em px vai ficar dentro do percentual de 30% total, então vai se ajustar sozinho */
+    box-sizing: border-box;
+    /* border-color: #000000;
+    border-width: 2px;
+    border-style: solid; */
+    /* Posso substituir por: */
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: #C78C19;
+}
+
+/* active = comportamento de quando o elemento está sendo clicado */
+.produtos li:active{
+    border-color: #088C19;
+}
+
+/* Quando o mouse estiver em cima do li o h2 vai mudar o tamanho da fonte */
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produtos h2{
+    font-size: 30px;
     font-weight: bold;
 }
 
-.titulo-principal{
-    padding-left: 20px;
+.produto-descricao{
+    font-size: 18px;
 }
 
-.titulo-centralizado{
-    text-align: center
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    /* margin-top: 10px poderia fazer assim  */
+    margin: 10px 0 0;
 }
 
-p{
-    text-align: center;
+main{
+    /* Deixar conteudo centralizado */
+    width: 940px;
+    margin: 0 auto;
 }
 
-#missao{
+form{
+    /* 40px pra cima e pra baixo e 0 pros lados */
+    margin: 40px 0;
+}
+
+form label{
+    /* block = conteudo ocupa 100% da largura da página */
+    display: block;
     font-size: 20px;
+    margin: 0 0 10px;
 }
 
-em strong{
-    color: #FF0000;
-}
-
-
-
-.itens{
-    /*inline-block = ocupa o tamanho do seu conteúdo e permite elementos ao lado*/
-    display: inline-block;
-    vertical-align: top; /*Alinha o elemento na linha superior*/
-    width: 20%;
-    margin-right: 15%;
-}
-
-.itens li{
-    font-style: italic;
-}
-
-.beneficios{
-    background: #FFFFFF;
-    padding: 20px;
-}
-
-
-.imagemBeneficios{
+form input{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
     width: 50%;
 }
 
+footer{
+    text-align: center;
+    /* Colocando uma imagem de fundo através do seu endereço */
+    background: url("bg.jpg");
+    padding: 40px 0px;
+}
+
+.copyright{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
