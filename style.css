@@ -100,19 +100,59 @@ form{
     margin: 40px 0;
 }
 
-form label{
+form label, form p{
     /* block = conteudo ocupa 100% da largura da página */
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
 }
 
-form input{
+/* form input, form textarea{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+} */
+
+/* Tivemos que criar uma classe para colocar especifico em alguns inputs porque queremos que os inputs tipo radio não sejam block, mas inline
+para que o label fique do lado dele */
+
+.input-padrao{
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
 }
+
+.checkbox{
+    margin: 20px 0;
+}
+
+p{
+    color: red;
+}
+
+form p{
+    color: blue;
+}
+
+.teste{
+    color: yellow;
+}
+
+/* só tag p que tem essa classe vai receber a cor laranja */
+p.teste{
+    color: orange;
+}
+
+#teste{
+    color: green;
+}
+
+#teste{
+    color: pink;
+}
+
 
 footer{
     text-align: center;
