@@ -128,32 +128,6 @@ para que o label fique do lado dele */
     margin: 20px 0;
 }
 
-p{
-    color: red;
-}
-
-form p{
-    color: blue;
-}
-
-.teste{
-    color: yellow;
-}
-
-/* só tag p que tem essa classe vai receber a cor laranja */
-p.teste{
-    color: orange;
-}
-
-#teste{
-    color: green;
-}
-
-#teste{
-    color: pink;
-}
-
-
 footer{
     text-align: center;
     /* Colocando uma imagem de fundo através do seu endereço */
