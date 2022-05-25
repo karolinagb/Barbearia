@@ -12,7 +12,7 @@
                 <!-- Evelopamos o conteúdo da imagem e da nav numa div para conseguirmos centralizar 
                     eles juntos -->
                 <div class="caixa">
-                  <h1><img src="logo.png" alt=""></h1>
+                  <h1><img src="logo.png" alt="Logo da Barbearia Alura" title="Logo da Barbearia Alura"></h1>
                     <nav>
                         <ul class="navegacao">
                             <li><a href="index.html">Home</a></li>
@@ -40,10 +40,13 @@
                     <!-- Esse grupo faz parte do mesmo símbolo que é a seleção -->
                     <!-- Ou todas essas linhas são pertencentes a uma única entrada de dados então
                     vamos colocar uma div -->
-                    <div>
-                         <!-- name="contato" = faz com que eles sejam do mesmo grupo e quando eu clicar em 1
+                    <!-- Quando temos 1 ou mais campos no formulario relacionados a um assunto específico e queremos agrupar ele
+                    colocamos a tag fieldset -->
+                    <fieldset>
+                         <!-- Dentro de um fieldset não temos parágrafos, mas legend-->
+                        <legend>Como prefere o nosso contato?</legend>
+                        <!-- name="contato" = faz com que eles sejam do mesmo grupo e quando eu clicar em 1
                         ele desmarca o outro -->
-                        <p>Como prefere o nosso contato?</p>
                         <label for="radio-email">
                             <input type="radio" name="contato" value="email" id="radio-email">  Email
                         </label>
@@ -54,16 +57,16 @@
                         <label for="radio-whatsapp">
                             <input type="radio" name="contato" value="email" id="radio-whatsapp" checked> WhatsApp
                         </label>
-                    </div>
+                    </fieldset>
 
-                    <div>
-                        <p>Qual horário prefere ser atendido?</p>
+                    <fieldset>
+                        <legend>Qual horário prefere ser atendido?</legend>
                         <select>
                             <option value="">Manhã</option>
                             <option value="">Tarde</option>
                             <option value="">Noite</option>
                         </select>
-                    </div>
+                    </fieldset>
                    
                     <!-- Podemos adicionar um input dentro do label para não ter que colocar o for e id -->
                     <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
@@ -73,7 +76,7 @@
             </main>
 
             <footer>
-                <img src="logo-branco.png" alt="">
+                <img src="logo-branco.png" alt="Logo da Barbearia Alura" title="Logo da Barbearia Alura">
                 <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
             </footer>
         </div>
