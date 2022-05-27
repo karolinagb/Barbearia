@@ -144,8 +144,14 @@ para que o label fique do lado dele */
     background: darkorange;
     /* Que a transição demore um tempo para acontecer */
     /* Tempo da transição e quem vai sofrer a transição */
-    transition: 1s background;
+    /* all = transição de todos os elementos */
+    transition: 1s all;
     cursor: pointer;
+    /* Tranforma o
+    scale = elemento e tudo dentro dele aumenta em escala */
+    /* rotate = gira o elemento - 360deg é 360 graus*/ 
+    transform: rotate(360deg) scale(1.2);
+
 }
 
 footer{
