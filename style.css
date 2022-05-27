@@ -128,6 +128,26 @@ para que o label fique do lado dele */
     margin: 20px 0;
 }
 
+.enviar{
+    width: 40%;
+    padding: 15px 0px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* estilo quando o mouse está por cima */
+.enviar:hover{
+    background: darkorange;
+    /* Que a transição demore um tempo para acontecer */
+    /* Tempo da transição e quem vai sofrer a transição */
+    transition: 1s background;
+    cursor: pointer;
+}
+
 footer{
     text-align: center;
     /* Colocando uma imagem de fundo através do seu endereço */
