@@ -169,6 +169,11 @@ td, th{
     padding: 8px 15px;
 }
 
+/* css da imagem banner da página inicial */
+.banner{
+    width: 100%;
+}
+
 footer{
     text-align: center;
     /* Colocando uma imagem de fundo através do seu endereço */
