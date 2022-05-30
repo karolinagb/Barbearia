@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Barbearia Alura</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style-home.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -23,29 +23,43 @@
             </nav>
         </div>
     </header>
+
     <img id="banner" src="banner.jpg" alt="">
-    <div class="principal">
-        <h2 class="titulo-centralizado negrito">Sobre a Barbearia Alura</h2>
 
-        <p>Localizada no coração da cidade a Barbearia Alura traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Alura</strong> já é destaque na cidade e conquista novos clientes a cada dia.</p> 
+    <main>
+        <!-- Quando temos um conteúdo que é 1 só como um todos ao invés da div usamos uma section
+        nesse caso essa section fala sobre a barbearia alura -->
+        <!-- div é uma divisão visual
+        e section é uma divisão onde há um conteúdo complexo, semanticamente ele tem o mesmo sentido -->
+        <section class="principal">
+            <h2 class="titulo-centralizado negrito">Sobre a Barbearia Alura</h2>
+    
+            <p>Localizada no coração da cidade a Barbearia Alura traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a <strong>Barbearia Alura</strong> já é destaque na cidade e conquista novos clientes a cada dia.</p> 
+    
+            <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+    
+            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
+            O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+        </section>
 
-        <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+        <section class="beneficios">
+            <h3 class="titulo-centralizado negrito">Benefícios</h3>
+    
+            <ul class="itens">
+                <li>Atendimento aos clientes</li>
+                <li>Espaço diferenciado</li>
+                <li>Localização</li>
+                <li>Profissionais qualificados</li>
+            </ul>
+    
+            <img src="beneficios.jpg" class="imagemBeneficios" alt="">
+        </section>
+    </main>
 
-        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
-        O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-    </div>
-    <div class="beneficios">
-        <h3 class="titulo-centralizado negrito">Benefícios</h3>
-
-        <ul class="itens">
-            <li>Atendimento aos clientes</li>
-            <li>Espaço diferenciado</li>
-            <li>Localização</li>
-            <li>Profissionais qualificados</li>
-        </ul>
-
-        <img src="beneficios.jpg" class="imagemBeneficios" alt="">
-    </div>
+    <footer>
+        <img src="logo-branco.png" alt="">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+    </footer>
 </body>
 </html>
 
