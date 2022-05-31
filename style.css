@@ -184,6 +184,8 @@ td, th{
     font-size: 2em;
     /* Estamos criando uma margen pra baixo proporcional ao tamanho da fonte do conteúdo titulo-principal */
     margin: 0 0 1em;
+    /* Limpa o float a esquerda que estiver acima dessa classe */
+    clear: left;
 }
 
 /* Estamos criando uma margen pra baixo proporcional ao tamanho da fonte do conteúdo p */
@@ -197,6 +199,18 @@ td, th{
 
 .principal em{
     font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    /* O elemento com o float vai ficar destacado da página porém sua sombra continua na mesma posição
+    os elementos abaixo vão subir e respeitar essa sombra pois ficarão a volta dele */
+    /* Porém todos os elementos abaixo do float passam a ser afetados por ele */
+    /* Para o float não afetar os elementos de baixo, esses elementos tem que ter a propriedade clear
+    que limpa o float */
+    float: left;
+    /* cima - direita - baixo - esquerda */
+    margin: 0 20px 20px 0; 
 }
 
 .imagemBeneficios{
