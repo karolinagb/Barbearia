@@ -328,3 +328,29 @@ footer{
     font-size: 13px;
     margin: 20px 0 0;
 }
+
+/* Com os seletores avançados do css eu tenho a possibilidade de selecionar os filhos diretos */
+/* Usando o sinal de maior estamos selecionando todas as tags p que são filhas direto do main */
+/* main > p{
+    background: red;
+} */
+
+/* Selecionando só o parágrafo que vem depois de uma imagem */
+/* img + p {
+    background: blue;
+} */
+
+/* Selecionando só o parágrafo que vem depois de uma imagem filhos da main */
+/* main img + p {
+    background: blue;
+} */
+
+/* Selecionando todos os p que vem depois da tag img dentro do main */
+/* main img ~p{
+    background: green;
+} */
+
+/* Na class principal selecionar todas as tag p que não tem o id missao */
+/* .principal p:not(#missao){
+    background: pink;
+} */
