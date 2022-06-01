@@ -189,6 +189,28 @@ td, th{
     /* Limpa o float a esquerda que estiver acima dessa classe */
     clear: left;
 }
+
+/* Usando pseudo elementos para marcar a primeira letra do texto em negrito */
+/* PSEUDO-ELEMENTOS = São elementos que criamos via css que não existem no html. */
+/* .titulo-principal::first-letter{
+    font-weight: bold;
+} */
+
+/* Eles criam um espaço que o css pode ser utilizado antes do elemento e depois do elemento
+.titulo-principal::before{
+    content: "[ ";
+}
+
+.titulo-principal::after{
+    content: " ]"
+} */
+
+
+/* Definindo todas as primeiras linhas do parágrafo como italic */
+/* p::first-line{
+    font-style: italic;
+} */
+
 .principal{
     padding: 3em 0;
     background: #FEFEFE;
@@ -273,6 +295,10 @@ usar 100% da largura, esses elementos no html tem que ficar colados para que ess
 .itens:first-child{
     font-weight: bold;
 } 
+
+.itens::before{
+    content:"🟊";
+}
 
 /* Há como selecionar qualquer elemento da lista passando o número que queremos */
 /* Ou usando o valor de n - 2n = pega todos os elementos par */
