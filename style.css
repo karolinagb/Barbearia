@@ -188,6 +188,9 @@ td, th{
     margin: 0 0 1em;
     /* Limpa o float a esquerda que estiver acima dessa classe */
     clear: left;
+
+    /* Podemos definir opacidade para cor com o rgba onde a camada a é a alfa que é uma camada de opacidade */
+    /* color: rgba(0, 0, 0, 0.3); */
 }
 
 /* Usando pseudo elementos para marcar a primeira letra do texto em negrito */
@@ -309,6 +312,16 @@ usar 100% da largura, esses elementos no html tem que ficar colados para que ess
 
 .imagem-beneficios{
     width: 60%;
+    /* Opacity = é uma camada posta em cima de um elemento que me permite ver mais ou menos esse elemento */
+    /* A opacity vai de 0 (não ver nada do elemento) a 1 (ver o elemento completamente) */
+    /* 70% visivel e 30% de opacity */
+    /* opacity: 0.7; */
+    opacity: 1;
+}
+
+.imagem-beneficios:hover{
+    opacity: 0.3;
+    transition: 1s;
 }
 
 .video{
