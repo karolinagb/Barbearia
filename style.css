@@ -94,9 +94,7 @@ nav a:hover{
 }
 
 main{
-    /* Deixar conteudo centralizado */
-    width: 940px;
-    margin: 0 auto;
+    
 }
 
 form{
@@ -191,6 +189,13 @@ td, th{
     /* Limpa o float a esquerda que estiver acima dessa classe */
     clear: left;
 }
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    /* Deixar conteudo centralizado */
+    width: 940px;
+    margin: 0 auto;
+}
 
 /* Estamos criando uma margen pra baixo proporcional ao tamanho da fonte do conteúdo p */
 .principal p{
@@ -219,6 +224,17 @@ td, th{
 
 .mapa{
     padding: 3em 0;
+    /* linear-gradient = define uma cor gradiente que vai do laranja para o azul */
+    /* 90deg é o grau de inclinação do gradiente */
+    /* As porcentagens após a cor é para dizer onde vai começar o degradê */
+    /* background: linear-gradient(90deg, orange 50%, blue 70%, red); */
+    /* background: radial-gradient(orange 50%, blue 70%, red); */
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
 }
 
 .mapa p{
@@ -228,6 +244,7 @@ td, th{
 
 .beneficios{
     padding: 3em 0;
+    background: #888888;
 }
 
 .conteudo-beneficios{
