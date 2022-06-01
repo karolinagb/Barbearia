@@ -191,6 +191,9 @@ td, th{
 
     /* Podemos definir opacidade para cor com o rgba onde a camada a é a alfa que é uma camada de opacidade */
     /* color: rgba(0, 0, 0, 0.3); */
+
+    /* Podemos criar sombras em texto */
+    /* text-shadow: 2px 2px 20px #000000; */
 }
 
 /* Usando pseudo elementos para marcar a primeira letra do texto em negrito */
@@ -270,6 +273,12 @@ td, th{
 .beneficios{
     padding: 3em 0;
     background: #888888;
+
+    /* Criando uma sombra interna com inset*/
+    /* Ela vai ser posiciona a partir do centro e por isso tem 0 para os dois eixos */
+    /* Os 30px é porque se criarmos uma sombra no mesmo tamanho do elemento e então ela pecisa desse espaçamento para funcionar
+    Então ela vai se uma sombra de 30px*/
+    /* box-shadow: inset 0 0 30px #000000; */
 }
 
 .conteudo-beneficios{
@@ -312,11 +321,20 @@ usar 100% da largura, esses elementos no html tem que ficar colados para que ess
 
 .imagem-beneficios{
     width: 60%;
+
     /* Opacity = é uma camada posta em cima de um elemento que me permite ver mais ou menos esse elemento */
     /* A opacity vai de 0 (não ver nada do elemento) a 1 (ver o elemento completamente) */
     /* 70% visivel e 30% de opacity */
     /* opacity: 0.7; */
     opacity: 1;
+
+    /* box-shadow serve para adicionar sombra ao elemento */
+    /* Eixo X, Eixo Y e a cor */
+    /* ou  Eixo X, Eixo Y, grau de espalhamento dessa sombra onde ela vai ter uma quantidade de pixels para ir do sólido para o transparente
+     e a cor*/
+    /* Eixo X, Eixo Y, espalhamento, intensidade da borda (a partir do tamanho do elemento o quão mais ela vai se espalhar) e a cor */
+    /* box-shadow: 10px 10px 30px 20px #000000, -10px -10px yellow, -20px 20px rgba(255,0,0,0.5); */
+    box-shadow: 10px 10px 10px #000000;
 }
 
 .imagem-beneficios:hover{
