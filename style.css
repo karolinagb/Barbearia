@@ -396,6 +396,14 @@ eu entrego um estilo diferente*/
        width: auto;
    }
 
+   .principal form, table{
+       margin-left: 2em;
+   }
+
+   .enviar{
+       width: 50%;
+   }
+
    .caixa h1{
        text-align: center;
    }
@@ -420,5 +428,9 @@ eu entrego um estilo diferente*/
 
     .produtos li h2, .produto-descricao, .produto-preco{
         font-size: 2em;
+    }
+
+    form input{
+        width: auto;
     }
 }
