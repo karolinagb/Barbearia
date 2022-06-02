@@ -392,7 +392,7 @@ eu entrego um estilo diferente*/
 /* screen = é o valor que eu quero usar, existe print, por exemplo, para impressora */
 /*  */
 @media screen and (max-width: 480px){
-   .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+   .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
        width: auto;
    }
 
@@ -407,4 +407,18 @@ eu entrego um estilo diferente*/
    .lista-beneficios, .imagem-beneficios{
        width: 100%;
    }
+
+    .produtos li {
+        display: block;
+        width: auto;
+        margin: 2em 2em;
+    }
+
+    .produtos img{
+        width: auto;
+    }
+
+    .produtos li h2, .produto-descricao, .produto-preco{
+        font-size: 2em;
+    }
 }
