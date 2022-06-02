@@ -392,7 +392,19 @@ eu entrego um estilo diferente*/
 /* screen = é o valor que eu quero usar, existe print, por exemplo, para impressora */
 /*  */
 @media screen and (max-width: 480px){
-    body{
-        background: red;
-    }
+   .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+       width: auto;
+   }
+
+   .caixa h1{
+       text-align: center;
+   }
+
+   .caixa nav{
+        position: static;
+   }
+
+   .lista-beneficios, .imagem-beneficios{
+       width: 100%;
+   }
 }
