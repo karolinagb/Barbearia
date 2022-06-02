@@ -385,3 +385,14 @@ footer{
 /* .principal p:not(#missao){
     background: pink;
 } */
+
+/* Para telas até 480px precisamos entregar um estilo diferente */
+/* Fazemos isso através das mídias queries, eu vou perguntar ao meu navegador qual o tamanho daquela tela  e se for o tamanho que eu quero
+eu entrego um estilo diferente*/
+/* screen = é o valor que eu quero usar, existe print, por exemplo, para impressora */
+/*  */
+@media screen and (max-width: 480px){
+    body{
+        background: red;
+    }
+}
